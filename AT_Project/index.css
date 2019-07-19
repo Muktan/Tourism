@@ -1,0 +1,126 @@
+header {
+    width: 100%;
+    height: 100%;
+    background-image: url("file:///c:/Users/lenovo/Pictures/minimal/abc.JPG");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 1000px;
+    /* border: 6px solid darkblue; */
+}
+
+.frame {
+    margin: 70px 0px 70px 0px;
+}
+
+div h2 {
+    margin-top: 0.7em;
+}
+
+.desc {
+    padding-bottom: 10px;
+}
+
+#opt {
+    margin-top: 10px;
+}
+
+#main_logo {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 670px) {
+    header {
+        min-height: 500px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .frame {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .parallax-container {
+        height: 150px;
+    }
+}
+
+.nav-wrapper {
+    margin: 0px 50px 0px 10px;
+}
+
+.nav-wrapper a {
+    color: blueviolet;
+    background-color: transparent;
+}
+
+nav {
+    background-color: transparent;
+    height: 100px;
+    /* border: 8px solid burlywood; */
+}
+
+#d_img {
+    margin-top: 30px;
+}
+
+.tabs .indicator {
+    background-color: rgb(203, 206, 39);
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+    background: transparent;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    position: absolute;
+    top: 44%;
+    left: 44%;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px)
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg)
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+    }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    }
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    }
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff6347;
+    z-index: 999999;
+}
