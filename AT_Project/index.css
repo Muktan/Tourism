@@ -134,3 +134,38 @@ nav {
     background-color: #ff6347;
     z-index: 999999;
 }
+
+.package
+{
+  background-color: black;
+}
+.carousel
+{
+    transform: translateY(-100px);
+    height: 800px;
+    perspective: 1300px;
+}
+
+.carousel .carousel-item
+{
+    width: 400px;
+}
+
+.carousel .carousel-item img
+{
+    width: 380px;
+    height: 250px;
+}
+
+.carousel .carousel-item h6
+{
+    margin: -5px 0 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+}
