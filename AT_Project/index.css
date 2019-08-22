@@ -135,30 +135,26 @@ nav {
     z-index: 999999;
 }
 
-.package
-{
-  background-color: black;
+.package {
+    background-color: black;
 }
-.carousel
-{
+
+.carousel {
     transform: translateY(-100px);
     height: 800px;
     perspective: 1300px;
 }
 
-.carousel .carousel-item
-{
+.carousel .carousel-item {
     width: 400px;
 }
 
-.carousel .carousel-item img
-{
+.carousel .carousel-item img {
     width: 380px;
     height: 250px;
 }
 
-.carousel .carousel-item h6
-{
+.carousel .carousel-item h6 {
     margin: -5px 0 0;
     padding: 0;
     background: #fff;
