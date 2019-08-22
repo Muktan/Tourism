@@ -28,17 +28,56 @@
 </head>
 
 <body>
-    <div class="spinner-wrapper">
-        <div class="spinner"></div>
-    </div>
 
+    <!-- PRE-LOADER -->
+
+    <!-- PRELOADER ENDS -->
+
+
+    <!-- Carousel CODE -->
+    <div class="carousel carousel-slider slider fullscreen">
+        <ul class="slides">
+            <li>
+                <img src="file:///c:/Users/lenovo/Pictures/minimal/boat_man_sunset_134333_2560x1440.jpg">
+                <!-- random image -->
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="file:///c:/Users/lenovo/Pictures/minimal/sea_shore_rocks_sky_111672_3840x2160.jpg">
+                <!-- random image -->
+                <div class="caption left-align">
+                    <h3>Left Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="file:///c:/Users/lenovo/Pictures/minimal/sculpture_starry_sky_stone_123440_3840x2160.jpg">
+                <!-- random image -->
+                <div class="caption right-align">
+                    <h3>Right Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="file:///c:/Users/lenovo/Pictures/minimal/carving_IMG_0027-2-1920x1080.jpg">
+                <!-- random image -->
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- Carousel CODE ENDS -->
 
     <!-- HEADER -->
-
     <header>
         <nav>
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo"><img id="main_logo" src="file:///c:/Users/lenovo/Desktop/logo.png" alt="LOGO" width="80em" height="80em"></a>
+                <a href="#!" class="brand-logo"><img id="main_logo" src="images\logo.png" alt="LOGO" width="80em" height="80em"></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                     <i class="material-icons">menu</i>
                 </a>
@@ -65,29 +104,27 @@
                 </ul>
             </div>
         </nav>
-
-        <!-- SIDEBAR FOR MOBILE DEVICES -->
-        <ul class="sidenav grey lighten-2" id="mobile-demo">
-            <li><a href="#Explore">Explore</a></li>
-            <li><a href="#Activities">Activities</a></li>
-            <li><a href="#GetTouch">GetTouch</a></li>
-        </ul>
-        <script>
-            //script for sidebar
-            // document.addEventListener('DOMContentLoaded', function() {
-            //     M.AutoInit();
-            //     var elems = document.querySelectorAll('.sidenav');
-            //     var instances = M.Sidenav.init(elems, options);
-            // });
-
-            $(document).ready(function() {
-                $('.sidenav').sidenav();
-            });
-        </script>
     </header>
-
-
+    <!-- SIDEBAR FOR MOBILE DEVICES -->
+    <ul class="sidenav grey lighten-2" id="mobile-demo">
+        <li><a href="#Explore">Explore</a></li>
+        <li><a href="#Activities">Activities</a></li>
+        <li><a href="#GetTouch">GetTouch</a></li>
+    </ul>
+    <script>
+        // script
+        // for sidebar
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+        });
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+        });
+    </script>
     <!-- HEADER COMPLETE -->
+
 
 
 
@@ -141,7 +178,7 @@
     <!-- PARALLAX container-->
     <div class="parallax-container">
         <div class="parallax">
-            <img src="file:///c:/Users/lenovo/Pictures/minimal/lion_grin_art_137820_1600x900.JPG" class="responsive-img">
+            <img src="file:///c:/Users/lenovo/Pictures/minimal/buddha_statue_buddhism_132773_3840x2160.jpg" class="responsive-img">
         </div>
     </div>
     <!-- PARALLAX container ends-->
@@ -233,15 +270,15 @@
                         <p>Services required:</p>
                         <p>
                             <label>
-                                    <input type="checkbox">
-                                    <span>Photography</span>
-                                </label>
+                                <input type="checkbox">
+                                <span>Photography</span>
+                            </label>
                         </p>
                         <p>
                             <label>
-                                    <input type="checkbox">
-                                    <span>Photo Editing</span>
-                                </label>
+                                <input type="checkbox">
+                                <span>Photo Editing</span>
+                            </label>
                         </p>
                     </div>
                     <div class="input-field center">
@@ -290,6 +327,72 @@
         //     var instances = M.Sidenav.init(elems, options);
         // });
 
+        $(document).ready(function() {
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            $('.preloader-background').delay(2000).fadeOut('slow');
+
+            $('.preloader-wrapper')
+                .delay(2000)
+                .fadeOut();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            //Preloader
+            $(window).on("load", function() {
+                preloaderFadeOutTime = 5000;
+
+                function hidePreloader() {
+                    var preloader = $('.spinner-wrapper');
+                    preloader.fadeOut(preloaderFadeOutTime);
+                }
+                hidePreloader();
+            });
+        });
+    </script>
+
+
+
+    <script>
+        //script for sidebar
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+        });
+
+
+
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     var elems = document.querySelectorAll('.slider');
+        //     var instances = M.Slider.init(elems, options);
+        // });
+
+        // Or with jQuery
+
+        $(document).ready(function() {
+            $('.slider').slider();
+        });
+        var instance = M.Carousel.init({
+            fullWidth: true,
+            indicators: true
+        });
+
+        // Or with jQuery
+
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+        });
         $(document).ready(function() {
             $('.materialboxed').materialbox();
             $('.parallax').parallax();
