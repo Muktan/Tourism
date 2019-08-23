@@ -136,25 +136,27 @@ nav {
 }
 
 .package {
-    background-color: black;
+    background-color: white;
+    overflow: hidden;
 }
 
-.carousel {
+.carousela {
     transform: translateY(-100px);
     height: 800px;
     perspective: 1300px;
 }
 
-.carousel .carousel-item {
+.carousela .carousel-item {
     width: 400px;
+    position: absolute;
 }
 
-.carousel .carousel-item img {
+.carousela .carousel-item img {
     width: 380px;
     height: 250px;
 }
 
-.carousel .carousel-item h6 {
+.carousela .carousel-item h6 {
     margin: -5px 0 0;
     padding: 0;
     background: #fff;
