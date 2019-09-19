@@ -1,0 +1,11 @@
+#main_img {
+    width: 100%;
+    height: 100%;
+    background-image: url("file:///c:/Users/lenovo/Pictures/minimal/abc.JPG");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* border: 6px solid darkblue; */
+    min-height: 80vh;
+}
