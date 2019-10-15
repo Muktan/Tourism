@@ -3,6 +3,10 @@
                 box-sizing: border-box;
             }
             
+            body {
+                background: rgb(27, 27, 27);
+            }
+            
             header {
                 width: 100%;
                 height: 100%;
@@ -13,6 +17,46 @@
                 background-position: center center;
                 /* border: 6px solid darkblue; */
                 min-height: 100vh;
+            }
+            
+            .f_svg {
+                width: 50px;
+                padding-top: 20px;
+                padding-left: 5px;
+                display: inline-block;
+            }
+            
+            #top_heading h1 {
+                display: inline-block;
+                font-size: 100px;
+                color: rgb(250, 53, 53);
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            
+            @media screen and (max-width: 992px) {
+                #top_heading h1 {
+                    display: inline-block;
+                    font-size: 40px;
+                    color: rgb(250, 53, 53);
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+                .f_svg {
+                    width: 25px;
+                    padding-top: 20px;
+                    padding-left: 5px;
+                    display: inline-block;
+                }
+            }
+            
+            #package_container {
+                width: 80vw;
+                margin-top: 27px;
+                margin-bottom: 35px;
+                -webkit-box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
+                -moz-box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
+                box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
             }
             
             .frame {
@@ -161,6 +205,45 @@
                 text-align: left;
             }
             
+            #top_3_attraction {
+                width: 80vw;
+                margin-top: 27px;
+                margin-bottom: 35px;
+                -webkit-box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
+                -moz-box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
+                box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
+            }
+            
+            #activity_container {
+                width: 70vw;
+                margin-top: 27px;
+                margin-bottom: 35px;
+                -webkit-box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
+                -moz-box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
+                box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
+            }
+            
+            #event_container {
+                width: 80vw;
+                height: 100vh;
+                margin-top: 27px;
+                -webkit-box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
+                -moz-box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
+                box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
+            }
+            
+            #GetTouch {
+                width: 80vw;
+                -webkit-box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
+                -moz-box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
+                box-shadow: 0px 0px 22px -3px rgba(237, 228, 237, 0.51);
+            }
+            
+            .stripe-4 {
+                color: white;
+                background: repeating-linear-gradient(-55deg, #222, #222 10px, #333 10px, #333 20px);
+            }
+            
             .cont {
                 display: block;
                 margin: 0;
@@ -264,7 +347,7 @@
             .next {
                 cursor: pointer;
                 position: absolute;
-                top: 25%;
+                top: 35%;
                 width: auto;
                 padding: 16px;
                 margin-top: -50px;
@@ -338,13 +421,14 @@
             
             @media screen and (max-width: 576px) {
                 .parallax-container {
-                    height: 100px;
+                    height: 70px;
                 }
             }
             
             .container_act.row .card {
                 transition: 1.5s;
                 height: 300px;
+                background: transparent;
             }
             
             .container_act.row .card:hover {
@@ -358,14 +442,14 @@
             }
             
             .card .face.face2 {
-                background: #222;
+                background: rgb(87, 83, 83);
                 z-index: 0;
                 transform: translateY(-100px);
                 border-radius: 0px 0px 20px 20px;
             }
             
             .card:hover .face.face2 {
-                background: #222;
+                background: rgb(87, 83, 83);
                 z-index: 0;
                 transform: translateY(0);
             }
@@ -374,7 +458,7 @@
                 padding: 10px;
                 z-index: 2;
                 transform: translateY(100px);
-                background: rgb(34, 28, 28);
+                background: rgb(87, 83, 83);
                 border-radius: 20px 20px 20px 20px;
             }
             
@@ -681,20 +765,20 @@
             }
             
             .event_slide__text-desc {
-                font-family: 'Open Sans Condensed', sans-serif;
+                font-family: 'Dosis', sans-serif;
             }
             
             .event_temp {
                 background: #000;
-                height: 100vh;
+                height: 80vh;
                 overflow: hidden;
                 position: absolute;
                 box-sizing: border-box;
                 margin: 0;
-                margin-top: 100px;
-                margin-bottom: 100px;
+                margin-top: 10px;
+                margin-bottom: 0px;
                 padding: 0;
-                width: 100%;
+                width: 80vw;
             }
             
             .event_slide__overlay {
@@ -952,7 +1036,7 @@
             }
             
             .event_slide__text-heading {
-                font-family: "Livvic", Helvetica, Arial, sans-serif;
+                font-family: 'Dosis', sans-serif;
                 font-size: 5rem;
                 margin-bottom: 2rem;
             }
@@ -1010,4 +1094,116 @@
             
             .event_slide__text-link:hover:before {
                 transform: rotateX(0);
+            }
+            
+            footer.mainfooter {
+                background: #16222A;
+                background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+                background: linear-gradient(59deg, #3A6073, #16222A);
+                color: white;
+                margin-top: 100px;
+            }
+            
+            footer.mainfooter a {
+                color: #fff;
+                font-size: 14px;
+                transition-duration: 0.2s;
+            }
+            
+            footer.mainfooter a:hover {
+                color: #FA944B;
+                text-decoration: none;
+            }
+            
+            footer.mainfooter .copy {
+                font-size: 12px;
+                padding: 10px;
+                border-top: 1px solid #FFFFFF;
+            }
+            
+            footer.mainfooter .footer-middle {
+                padding-top: 2em;
+                color: white;
+            }
+            /*SOCİAL İCONS*/
+            /* footer social icons */
+            
+            footer.mainfooter ul.social-network {
+                list-style: none;
+                display: inline;
+                margin-left: 0 !important;
+                padding: 0;
+            }
+            
+            footer.mainfooter ul.social-network li {
+                display: inline;
+                margin: 0 5px;
+            }
+            /* footer social icons */
+            
+            footer.mainfooter .social-network a.icoFacebook:hover {
+                background-color: #3B5998;
+            }
+            
+            footer.mainfooter .social-network a.icoLinkedin:hover {
+                background-color: #007bb7;
+            }
+            
+            footer.mainfooter .social-network a.icoFacebook:hover i,
+            footer.mainfooter .social-network a.icoLinkedin:hover i {
+                color: #fff;
+            }
+            
+            footer.mainfooter .social-network a.socialIcon:hover,
+            footer.mainfooter .socialHoverClass {
+                color: #44BCDD;
+            }
+            
+            footer.mainfooter .social-circle li a {
+                display: inline-block;
+                position: relative;
+                margin: 0 auto 0 auto;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                text-align: center;
+                width: 50px;
+                height: 50px;
+                font-size: 15px;
+            }
+            
+            footer.mainfooter .social-circle li i {
+                margin: 0;
+                line-height: 50px;
+                text-align: center;
+            }
+            
+            footer.mainfooter .social-circle li a:hover i,
+            footer.mainfooter .triggeredHover {
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -ms--transform: rotate(360deg);
+                transform: rotate(360deg);
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -o-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                transition: all 0.2s;
+            }
+            
+            footer.mainfooter .social-circle i {
+                color: #595959;
+                -webkit-transition: all 0.8s;
+                -moz-transition: all 0.8s;
+                -o-transition: all 0.8s;
+                -ms-transition: all 0.8s;
+                transition: all 0.8s;
+            }
+            
+            footer.mainfooter .social-network a {
+                background-color: #F9F9F9;
+            }
+            
+            footer.mainfooter {
+                margin-top: 0px;
             }

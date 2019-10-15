@@ -10,12 +10,22 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <style>
+
+    </style>
     <style>
         @font-face {
             font-family: Hoodson;
             src: url('font/Hoodson.eot');
             src: url('font/Hoodson.eot?#iefix') format('embedded-opentype'), url('font/Hoodson.ttf') format('truetype');
         }
+        /* TEST SECTION */
+        /* TEST SECTION ENDS*/
     </style>
     <link rel="stylesheet" href="description.css">
 
@@ -49,9 +59,719 @@
 
     <!-- IMAGE SHOWCASE -->
     <div id="main_img">
-        <h1>Welcome...!!!</h1>
+        <h1>Daman</h1>
+    </div>
+    <!-- IMAGE SHOWCASE END -->
+
+    <div id="About" class="container">
+        <h2>
+            About Daman
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tenetur voluptatibus, nostrum ratione quam iure libero eligendi voluptas tempore repellendus quibusdam aspernatur rerum magnam! Sunt, similique! Vero error impedit ipsa! Lorem ipsum dolor
+            sit, amet consectetur adipisicing elit. Praesentium illo dolores quasi. Neque consequuntur modi error tempore laborum quasi, soluta aliquam ipsam quod magni nostrum eius necessitatibus nemo nulla non.
+        </p>
     </div>
 
+    <div id="See_to_belive" class="container">
+
+        <h2>See to belive</h2>
+        <p>Catch the excellent views below in these pictures and be enticed to visit the birding destinations.</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/main3.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Daman east</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/main2.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Daman west</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/parallex1.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Daman north</h5>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <div id="where" class="container" style="margin-top: 20px;">
+        <h2 id="where_head">
+            Where to experience
+        </h2>
+        <p>Catch the excellent views below in these pictures and be enticed to visit the birding destinations.</p>
+        <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+
+
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-4 where_card col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/att_1.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Place 1</h2>
+                                    <a class="info">link here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 where_card col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/main3.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Place 2</h2>
+                                    <a class="info">link here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 where_card col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/att_3.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>place 3</h2>
+                                    <a class="info">link here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+
+                <!--Second slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+
+
+                        <div class="col-lg-4 col-md-4 where_card col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/att_1.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Place 1</h2>
+                                    <a class="info">link here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 where_card col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/main3.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Place 2</h2>
+                                    <a class="info">link here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 where_card col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/att_3.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Place 3</h2>
+                                    <a class="info">link here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Second slide-->
+
+                <!--Third slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+
+
+                        <div class="col-lg-4 col-md-4 where_card col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/att_1.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Hover effect 1</h2>
+                                    <a class="info">link here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 where_card col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/main3.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Hover effect 1</h2>
+                                    <a class="info">link here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 where_card col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="images/att_3.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Hover effect 1</h2>
+                                    <a class="info">link here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Third slide-->
+
+            </div>
+            <!--/.Slides-->
+
+        </div>
+        <!--/.Carousel Wrapper-->
+        <div class="controls-top">
+            <a class="black-text" href="#multi-item-example" data-slide="prev"><i class="fas fa-angle-left fa-3x pr-3"></i></a>
+            <a class="black-text" href="#multi-item-example" data-slide="next"><i class="fas fa-angle-right fa-3x pl-3"></i></a>
+        </div>
+        <!--/.Controls-->
+    </div>
+
+
+
+
+
+    <!-- INSIDERS STORIES -->
+    <div id="insider_stories" class="container">
+        <h2 id="insider_stories_head">
+            Insider Stories
+        </h2>
+        <p>
+            So, why is Gujarat touted as incredible India's Best Kept Secret? What is it about the places, people, landscape, art,culture and history that is so enthralling? What makes Gujarat the land of cathartic spiritual experiences, intricate art and immortal
+            architecture regaling timeless tales, beaches, cuisines, landscapes and wildlife.<b>Read through the
+                travelogues, journeys and experiences of many travel enthusiasts who have traversed and fallen in love with the land
+                of
+                Gujarat!</b>
+        </p>
+        <br>
+        <br>
+
+        <div id="Explore">
+
+            <div class="frame row">
+                <div class="col-lg-4 col-sm-12">
+                    <img style="width:100%;height: 100%;" id="d_img" data-toggle="modal" data-target="#exampleModal1" class=" responsive-img materialboxed" src="images/temp.jpg" alt="test">
+                </div>
+                <div class="col-lg-8 col-sm-12 ">
+                    <h2 class="story_head">Heading 1</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolorum enim commodi! Impedit, aliquid aut, quo quam soluta vero voluptas laboriosam non deserunt amet nam eaque facere explicabo, quisquam corrupti!
+                        <br>
+                        <a href="# " style="color: orangered;font-family: 'Josefin Sans', sans-serif; ">Read more &gt;</a>
+                        <br>
+                        <span>
+                            <img src="images/Person.jpg" alt="..." class="rounded-circle" style="display: inline;width: 50px;height: 50px;">
+                            <a style="padding-top: 10px;"> Muktan</a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="modal fade " id="exampleModal1" tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+                <div class="modal-dialog " role="document ">
+                    <div class="modal-content " style="width:80vw;height:40vw;position: absolute; left: 50%; top: 50vh; transform: translate(-50%, -50%) scale(1); ">
+                        <img src="images/temp.jpg " style="width:100%;height:100%; " alt="test ">
+                    </div>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="row frame right-align big_second_story">
+
+                <div class="col-lg-8 col-sm-12 ">
+                    <h2 class="story_head second_story_head">Heading 2</h2>
+                    <p style="text-align: end; ">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolorum enim commodi! Impedit, aliquid aut, quo quam soluta vero voluptas laboriosam non deserunt amet nam eaque facere explicabo, quisquam corrupti!
+                        <br>
+                        <a href="# " style="text-align: end;color: orangered;font-family: 'Josefin Sans', sans-serif; ">Read more &gt;</a>
+                        <br>
+                        <span>
+                            <img src="images/Person.jpg" alt="..." class="rounded-circle" style="display: inline;width: 50px;height: 50px;">
+                            <a style="padding-top: 10px;"> Vishnu</a>
+                        </span>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 ">
+                    <img style="width:100%;height: 100%;" id="d_img " class="responsive-img materialboxed " data-toggle="modal" data-target="#exampleModal2" src="images/temp.jpg " alt="test ">
+                </div>
+
+            </div>
+            <div class="row frame right-align small_second_story">
+                <div class="col-lg-4 col-sm-12 ">
+                    <img style="width:100%;height: 100%;" id="d_img " class="responsive-img materialboxed " data-toggle="modal" data-target="#exampleModal2" src="images/temp.jpg " alt="test ">
+                </div>
+                <div class="col-lg-8 col-sm-12 ">
+                    <h2 class="story_head second_story_head">Heading 2</h2>
+                    <p style="text-align: end; ">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolorum enim commodi! Impedit, aliquid aut, quo quam soluta vero voluptas laboriosam non deserunt amet nam eaque facere explicabo, quisquam corrupti!
+                        <br>
+                        <a href="# " style="text-align: end;color: orangered;font-family: 'Josefin Sans', sans-serif; ">Read more
+                            &gt;</a>
+                        <br>
+                        <span>
+                            <img src="images/Person.jpg" alt="..." class="rounded-circle"
+                                style="display: inline;width: 50px;height: 50px;">
+                            <a style="padding-top: 10px;"> Vishnu</a>
+                        </span>
+                    </p>
+                </div>
+
+
+
+
+            </div>
+            <div class="modal fade " id="exampleModal2" tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel" aria-hidden="true ">
+                <div class="modal-dialog " role="document ">
+                    <div class="modal-content " style="width:80vw;height:40vw;position: absolute; left: 50%; top: 50vh; transform: translate(-50%, -50%) scale(1); ">
+                        <img src="images/temp.jpg " style="width:100%;height:100%; " alt="test ">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+
+            <div class="frame row">
+                <div class="col-lg-4 col-sm-12">
+                    <img style="width:100%;height: 100%;" id="d_img" data-toggle="modal" data-target="#exampleModal3" class=" responsive-img materialboxed" src="images/temp.jpg" alt="test">
+                </div>
+                <div class="col-lg-8 col-sm-12 ">
+                    <h2 class="story_head">Heading 3</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolorum enim commodi! Impedit, aliquid aut, quo quam soluta vero voluptas laboriosam non deserunt amet nam eaque facere explicabo, quisquam corrupti!
+                        <br>
+                        <a href="# " style="color: orangered;font-family: 'Josefin Sans', sans-serif; ">Read more &gt;</a>
+                        <br>
+                        <span>
+                            <img src="images/Person.jpg" alt="..." class="rounded-circle" style="display: inline;width: 50px;height: 50px;">
+                            <a style="padding-top: 10px;"> Muktan</a>
+                        </span>
+                        <!-- <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer> -->
+                    </p>
+                </div>
+            </div>
+            <div class="modal fade " id="exampleModal3" tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+                <div class="modal-dialog " role="document ">
+                    <div class="modal-content " style="width:80vw;height:40vw;position: absolute; left: 50%; top: 50vh; transform: translate(-50%, -50%) scale(1); ">
+                        <img src="images/temp.jpg " style="width:100%;height:100%; " alt="test ">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- INSIDERS STORIES ENDS-->
+
+
+
+
+
+
+
+
+    <div id="packages" class="container" style="margin-top: 20px;">
+        <h2 id="packages_head">
+            Trails available
+        </h2>
+        <p>Catch the excellent views below in these pictures and be enticed to visit the birding destinations.</p>
+        <div id="multi-item-example1" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+
+
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-6 where_card col-sm-12 col-xs-12">
+                            <img class="img-responsive" src="images/att_1.jpg" alt="" style="height:300px;">
+                        </div>
+                        <div class="col-lg-6 col-md-6 where_card col-sm-12 col-xs-12">
+                            <h2>xyz package</h2>
+                            <h6>4 days -3 nights</h6>
+                            <h4>Destinations:</h4>
+                            <p style="text-indent: 5%;">1)place 1 2) place 2 ...etc</p>
+                            <h4>Attractioins</h4>
+                            <p style="text-indent: 5%;">1)attraction 1 2)attraction 2 ...etc</p>
+                            <button class="btn btn-outline-info">
+                                Know more
+                            </button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+
+                <!--Second slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+
+
+
+                        <div class="col-lg-6 col-md-6 where_card col-sm-12 col-xs-12">
+                            <img class="img-responsive" src="images/att_3.jpg" alt="" style="height:300px;">
+                        </div>
+                        <div class="col-lg-6 col-md-6 where_card col-sm-12 col-xs-12">
+                            <h2>xyz package</h2>
+                            <h6>4 days -3 nights</h6>
+                            <h4>Destinations:</h4>
+                            <p style="text-indent: 5%;">1)place 1 2) place 2 ...etc</p>
+                            <h4>Attractioins</h4>
+                            <p style="text-indent: 5%;">1)attraction 1 2)attraction 2 ...etc</p>
+                            <button class="btn btn-outline-info">
+                                Know more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Second slide-->
+
+                <!--Third slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+
+
+
+                        <div class="col-lg-6 col-md-6 where_card col-sm-12 col-xs-12">
+                            <img class="img-responsive" src="images/att_2.jpg" alt="" style="height:300px;">
+                        </div>
+                        <div class="col-lg-6 col-md-6 where_card col-sm-12 col-xs-12">
+                            <h2>xyz package</h2>
+                            <h6>4 days -3 nights</h6>
+                            <h4>Destinations:</h4>
+                            <p style="text-indent: 5%;">1)place 1 2) place 2 ...etc</p>
+                            <h4>Attractioins</h4>
+                            <p style="text-indent: 5%;">1)attraction 1 2)attraction 2 ...etc</p>
+                            <button class="btn btn-outline-info">
+                                Know more
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Third slide-->
+
+            </div>
+            <!--/.Slides-->
+
+        </div>
+        <!--/.Carousel Wrapper-->
+        <div class="controls-top">
+            <a class="black-text" href="#multi-item-example1" data-slide="prev"><i
+                    class="fas fa-angle-left fa-3x pr-3"></i></a>
+            <a class="black-text" href="#multi-item-example1" data-slide="next"><i
+                    class="fas fa-angle-right fa-3x pl-3"></i></a>
+        </div>
+        <!--/.Controls-->
+    </div>
+
+
+
+
+    <div id="travel_agent" class="container">
+        <h2 id="travel_agent_head">
+            Travel specialist
+        </h2>
+        <p>
+            Below is a list of travel agents/tour operators who are our trusted local specialists. Contact them today to plan a well-rounded trip to Gujarat, and for getting the best deals. Their packages cover everything - from the most visited to the off-beat,
+            from ancient to urbane, from mountains to beaches, from city life to stargazing nights. Click on the contact button and get a call back!
+        </p>
+        <div class="table-responsive">
+            <table class="table shadow-sm p-3 table-hover table-striped mb-5 table-secondary rounded">
+                <!-- <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Contact</th>
+                            </tr>
+                        </thead> -->
+                <caption>List of Travel Expert</caption>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img class="rounded-circle" src="./images/Person.jpg" alt="" style="width: 50px;height:50px;"></th>
+                        <td style="width:20%"><b>M/s. Patra Tours And Travels</b></td>
+                        <td style="width:45%" class="lead align-middle text-center">Address Bhubaneswar,Gujarat,India 149B, Ashok Nagar , Infront of Allahabad bank , Bhubaneswar - 751009</td>
+                        <td class="lead align-middle text-center" style="width: 20%;">
+                            <h4><a class="badge badge-pill badge-warning" href="#">
+                                Contact
+                            </a></h4>
+                        </td>
+                        <td class="lead align-middle text-center" style="width: 15%;">
+                            <h4><a class="badge badge-pill badge-warning" href="#">
+                                View Trails
+                            </a></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img class="rounded-circle" src="./images/Person.jpg" alt="" style="width: 50px;height:50px;"></th>
+                        <td style="width:20%"><b>M/s. Patra Tours And Travels</b></td>
+                        <td style="width:45%" class="lead align-middle text-center">Address Bhubaneswar,Gujarat,India 149B, Ashok Nagar , Infront of Allahabad bank , Bhubaneswar - 751009</td>
+                        <td class="lead align-middle text-center" style="width: 20%;">
+                            <h4><a class="badge badge-pill badge-success" href="#">
+                                    Contact
+                                </a></h4>
+                        </td>
+                        <td class="lead align-middle text-center" style="width: 15%;">
+                            <h4><a class="badge badge-pill badge-success" href="#">
+                                    View Trails
+                                </a></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img class="rounded-circle" src="./images/Person.jpg" alt="" style="width: 50px;height:50px;"></th>
+                        <td style="width:20%"><b>M/s. Patra Tours And Travels</b></td>
+                        <td style="width:45%" class="lead align-middle text-center">Address Bhubaneswar,Gujarat,India 149B, Ashok Nagar , Infront of Allahabad bank , Bhubaneswar - 751009</td>
+                        <td class="lead align-middle text-center" style="width: 20%;">
+                            <h4><a class="badge badge-pill badge-warning" href="#">
+                                    Contact
+                                </a></h4>
+                        </td>
+                        <td class="lead align-middle text-center" style="width: 15%;">
+                            <h4><a class="badge badge-pill badge-warning" href="#">
+                                    View Trails
+                                </a></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img class="rounded-circle" src="./images/Person.jpg" alt="" style="width: 50px;height:50px;"></th>
+                        <td><b>M/s. Patra Tours And Travels</b></td>
+                        <td class="lead align-middle text-center">Address Bhubaneswar,Gujarat,India 149B, Ashok Nagar , Infront of Allahabad bank , Bhubaneswar - 751009</td>
+                        <td class="lead align-middle text-center" style="width: 20%;">
+                            <h4><a class="badge badge-pill badge-success" href="#">
+                                    Contact
+                                </a></h4>
+                        </td>
+                        <td class="lead align-middle text-center" style="width: 15%;">
+                            <h4><a class="badge badge-pill badge-success" href="#">
+                                    View Trails
+                                </a></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img class="rounded-circle" src="./images/Person.jpg" alt="" style="width: 50px;height:50px;"></th>
+                        <td><b>M/s. Patra Tours And Travels</b></td>
+                        <td class="lead align-middle text-center">Address Bhubaneswar,Gujarat,India 149B, Ashok Nagar , Infront of Allahabad bank , Bhubaneswar - 751009</td>
+                        <td class="lead align-middle text-center" style="width: 20%;">
+                            <h4><a class="badge badge-pill badge-warning" href="#">
+                                    Contact
+                                </a></h4>
+                        </td>
+                        <td class="lead align-middle text-center" style="width: 15%;">
+                            <h4><a class="badge badge-pill badge-warning" href="#">
+                                    View Trails
+                                </a></h4>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+
+    <div class="container" id="more_places">
+        <div class="row">
+            <h2 id="more_places_head" class="col-lg-12">More Places to See</h2>
+
+            <div class="col-lg-3 col-sm-6">
+                <img style="height: 150px;width: 100%;" src="./images/att_1.jpg" alt="">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <h4>
+                    Khiching
+                </h4>
+                <h6>
+                    A Perfect Example of Temple Renovation
+                </h6>
+                <a href="# " style="color: orangered;font-family: 'Josefin Sans', sans-serif; ">Read more &gt;</a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <img style="height: 150px;width: 100%;" src="./images/att_2.jpg" alt="">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <h4>
+                    Khiching
+                </h4>
+                <h6>
+                    A Perfect Example of Temple Renovation
+                </h6>
+                <a href="# " style="color: orangered;font-family: 'Josefin Sans', sans-serif; ">Read more &gt;</a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <img style="height: 150px;width: 100%;" src="./images/att_3.jpg" alt="">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <h4>
+                    Khiching
+                </h4>
+                <h6>
+                    A Perfect Example of Temple Renovation
+                </h6>
+                <a href="# " style="color: orangered;font-family: 'Josefin Sans', sans-serif; ">Read more &gt;</a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <img style="height: 150px;width: 100%;" src="./images/att_4.jpg" alt="">
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <h4>
+                    Khiching
+                </h4>
+                <h6>
+                    A Perfect Example of Temple Renovation
+                </h6>
+                <a href="# " style="color: orangered;font-family: 'Josefin Sans', sans-serif; ">Read more &gt;</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="Maps" id="maps">
+        <h2 id="maps_head">Maps</h2>
+        <p class="container">
+            Gujarat is well connected with major cities of India and South East Asia. By virtue of its demography, the state comes under the East Coast Railway Division. Also, with Bhubaneswar having a full-fledged International airport, Gujarat is directly connected
+            to major cities of India, and internationally with Kuala Lumpur as well as Bangkok. Gujarat with its beautiful landscape and well-paved roads provide a delightful experience to bikers, cyclists and car enthusiasts. Also, the state’s road transport
+            has a robust bus service to multiple tourist destinations from major cities. Click here to view air/train schedules.
+        </p>
+        <div id="map" style="width: 100%;height:500px;overflow: hidden;"></div>
+
+
+        <script>
+            var map = L.map('map').setView([22.6775, 72.8819], 15);
+            L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=XzYR6O8wtr731zD6U03v', {
+                attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'
+            }).addTo(map);
+            var marker = L.marker([22.6775, 72.8819]).addTo(map);
+        </script>
+    </div>
+
+
+
+
+
+
+
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Heading 1</h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                                <li><a href="#">Payment Center</a></li>
+                                <li><a href="#">Contact Directory</a></li>
+                                <li><a href="#">Forms</a></li>
+                                <li><a href="#">News and Updates</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Heading 2</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Website Tutorial</a></li>
+                                <li><a href="#">Accessibility</a></li>
+                                <li><a href="#">Disclaimer</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Webmaster</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Heading 3</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Parks and Recreation</a></li>
+                                <li><a href="#">Public Works</a></li>
+                                <li><a href="#">Police Department</a></li>
+                                <li><a href="#">Fire</a></li>
+                                <li><a href="#">Mayor and City Council</a></li>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Follow Us</h4>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2018 - Company Name. All rights reserved.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script>
+        // TEST SCRIPT
+
+        //TEST SCRIPT ENDS
+    </script>
 </body>
 
 </html>
