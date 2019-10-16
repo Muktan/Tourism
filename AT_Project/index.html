@@ -988,56 +988,173 @@
         </div>
     </div>
 
-    <!-- <div class="carousel events">
-        <div class="carousel-item bigger" id="bigger">
-            <img src="images\1.jpg">
-            <div class="inner">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci. Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque
-                    erat ornare nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci. Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida
-                    urna, vitae scelerisque erat ornare nec.
-                </p>
+     <!-- Form -->
+     <div class="booking">
+        <div class="col l6 s12 offset-l2">
+            <ul class="tabs" style="margin-top: 10px">
+                <li class="tab col s4">
+                    <a href="#cab" class="indigo-text text-darken-4">CABS & BUSES</a>
+                </li>
+                <li class="tab col s4">
+                    <a href="#hotels" class="indigo-text text-darken-4">HOTELS</a>
+                </li>
+                <li class="tab col s4">
+                    <a href="#agents" class="indigo-text text-darken-4">AGENTS</a>
+                </li>
+            </ul>
+            <div class="col s6" id="cab">
+                <form class="cabs">
+                    <div class="row">
+                    <select class="browser-default col s12">
+                      <option value="" disabled selected>Search for Destination</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select></div>
+                    <div class="row">
+                        <select class="browser-default col s6">
+                            <option value="" disabled selected>Select Taxi or Bus</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <div class="input-field col s6">
+                            <i class="fas fa-rupee-sign prefix"></i>
+                            <input id="icon_money" type="tel" class="validate" placeholder="0.00">
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="input-field col s6">
+                                <i class="far fa-calendar-alt prefix"></i>
+                                <!-- <label for="icon_doj">Date of Journey</label> -->
+                                <input type="text" class="datepicker" placeholder="Date of Journey">
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="icon_name" type="tel" class="validate">
+                                <label for="icon_name">Full Name</label>
+                                </div>
+                    </div>      
+                    <div class="row">
+                            <div class="input-field col s6">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="icon_email" type="email" class="validate">
+                                    <label for="icon_email">Email Address</label>
+                                  </div>
+                                  
+                                  <div class="input-field col s6" style="border:2px solid white;">
+                                      <div class="row">
+                                          <div class="input-field col s3" style="padding-right:0px;">
+                                            <xsl:template match="/">
+                                            <select>
+                                                <xsl:for-each select="countries">
+                                                <option><xsl:value-of select="country"/></option>
+                                                </xsl:for-each>
+                                            </select>
+                                            </xsl:template>
+                                          </div>
+                                    <div class="input-field col s9">
+                                    <input id="icon_telephone" type="tel" class="validate">
+                                    <label for="icon_telephone">Mobile Number</label></div></div>
+                                  </div>
+                    </div> 
+                    <textarea class="col s12 input-lg" rows="4" placeholder="Complete Address"></textarea>
+                    <div class="input-field center">
+                    <button class="btn waves-effect waves-light submit_button" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                      </button> </div>
+                </form>
+                </div>
+            <div class="col s12" id="hotels">
+                    <form class="hotel">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="location" type="tel" class="validate" placeholder="Search for Location">
+                                    </div>
+                            </div>
+                            <div class="row" style="padding-top:0px;">
+                                <div class="chip" onclick="select()">
+                                    Ahmedabad
+                                  </div>
+                                  <div class="chip" onclick="select()">
+                                    Ahmedabad
+                                  </div>
+                                  <div class="chip" onclick="select()">
+                                    Ahmedabad
+                                  </div>
+                            </div>
+                            <div class="row">
+                                <select class="browser-default col s12" style="border:2px solid rgba(0,0,0,0.1)">
+                                    <option value="" disabled selected>Select Room Type</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="far fa-calendar-alt prefix"></i>
+                                    <input type="text" class="datepicker" placeholder="Date of Journey">
+                                    <!-- <label for="icon_doj1">Date of Journey</label> -->
+                                </div>
+                                    
+                                <div class="input-field col s6">
+                                    <i class="far fa-calendar-alt prefix"></i>
+                                    <input type="text" class="datepicker" placeholder="Return Date of Journey">
+                                    <!-- <label for="icon_rdoj"> Return Date of Journey</label> -->
+                                </div>
+                            </div>                
+                            <div class="row">
+                                <div class="col s6">
+                                    <i class="fa fa-minus-circle small prefix" aria-hidden="true"></i>
+                                    <span id="room" style="font-size:2rem">Room 1</span>
+                                    <i class="fa fa-plus-circle small" aria-hidden="true"></i>
+                                </div>
+                                <div class="col s6">
+                                    <i class="fa fa-minus-circle small prefix" aria-hidden="true"></i>
+                                    <span id="room" style="font-size:2rem">Guest 1</span>
+                                    <i class="fa fa-plus-circle small" aria-hidden="true"></i>
+                                </div>
+                            </div>
+    
+                            <div class="input-field center">
+                                <button class="btn waves-effect waves-light submit_button" type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                                </button> 
+                            </div>
+                    </form>
+            </div>
+    
+            <div class="col s12" id="agents">
+                <form class="agent">
+                    
+                    <div class="input-field center">
+                        <button class="btn waves-effect waves-light submit_button" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                          </button> </div>
+                </form>
             </div>
         </div>
-
-        <div class="carousel-item bigger" id="bigger">
-            <img src="images\2.jpg">
-            <div class="inner">
-                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci. Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque
-                    erat ornare nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci. Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida
-                    urna, vitae scelerisque erat ornare nec.
-                </p>
-            </div>
         </div>
-
-        <div class="carousel-item bigger" id="bigger">
-            <img src="images\8.jpg">
-            <div class="inner">
-                <p>rem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci. Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque
-                    erat ornare nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci. Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida
-                    urna, vitae scelerisque erat ornare nec.
-                </p>
-            </div>
-        </div>
-    </div> -->
-    <!-- <script>
-        $(document).ready(function() {
-            $('.carousel.events').click(function(){
-                $('.inner').css({left:'0px'},"slow");
+        <script>
+        $(document).ready(function(){
+            $('select').formSelect();
             });
-            $('.carousel.events').click(function(){
-                $('.inner').animate({left:'100px'},"slow");
-            });
-            
-        });
-    </script> -->
-
-    <!-- PARALLAX container-->
-    <!-- <div class="parallax-container">
-        <div class="parallax">
-            <img src="C:\Users\kmc\Downloads\Tourism-master\AT_Project\images\1.JPG" class="responsive-img">
+              </script><script>
+        $(document).ready(function(){
+            $('.datepicker').datepicker();
+            });  
+        </script>
+        <!-- Form Ends-->
+        
+        <!-- PARALLAX container-->
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="images/parallex3.jpg" class="responsive-img">
+            </div>
         </div>
-    </div> -->
-    <!-- GET IN TOUCH -->
+       
+       
+        <!-- GET IN TOUCH -->
     <section class="section container stripe-4 scrollspy" style="margin-top:30px;margin-bottom:30px;" id="GetTouch">
         <div class="row">
             <div class="col s12 l5">

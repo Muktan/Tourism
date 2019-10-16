@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src="sweetalert2.all.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+        
+        <style>
+          .avatar{
+            width:100px;
+            height:100px;
+            border-radius:50%;
+          }
+        </style>
+    </head>
+<body>
+<div class="container">
+    <h1>Edit Profile</h1>
+  	<hr>
+	<div class="row">
+      <!-- left column -->
+      <div class="col-md-3">
+        <div class="text-center">
+          <img src="no.png" class="avatar img-circle" alt="avatar">
+          <h6>Upload a different photo...</h6>
+          
+          <input type="file" class="form-control">
+        </div>
+      </div>
+      
+      <!-- edit form column -->
+      <div class="col-md-9 personal-info">
+        <div class="alert alert-info alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert" style="cursor:pointer;">×</a> 
+          <i class="fa fa-coffee"></i>
+          This is an <strong>.alert</strong>. Use this to show important messages to the user.
+        </div>
+        <h3>Personal info</h3>
+        
+        <form class="form-horizontal" role="form">
+          <div class="form-group row">
+            <div class="col-lg-6">
+            <label class="col-lg-12 control-label">First name:</label>
+            <div class="col-lg-12">
+              <input class="form-control" type="text" value="Vishnu">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <label class="col-lg-12 control-label">Last name:</label>
+            <div class="col-lg-12">
+              <input class="form-control" type="text" value="Paregi">
+            </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-lg-6">
+              <label class="col-lg-12 control-label">Email:</label>
+            <div class="col-lg-12">
+              <input class="form-control" type="text" value="vishnuparegi1@gmail.com">
+            </div>
+            </div>
+            <div class="col-lg-6" style="padding-left:25px">
+            <label for="exampleFormControlSelect1">Gender:</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+    </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-lg-6">
+                <div class="col-lg-6" style="padding-left:25px">
+                    <label for="exampleFormControlSelect1">Nationality:</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>India</option>
+              <option>USA</option>
+              <option>Other</option>
+            </select>
+            </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="col-lg-6" style="padding-left:25px">
+                  <label for="exampleFormControlSelect1">State:</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Gujarat</option>
+            <option>Odisha</option>
+            <option>Jammu</option>
+          </select>
+          </div>
+        </div>
+        </div>
+          <div class="form-group row">
+            <div class="col-lg-6">
+            <label class="col-lg-12 control-label">City:</label>
+            <div class="col-lg-12">
+              <input class="form-control" type="text" value="">
+            </div>
+            </div>
+          <div class="col-lg-6">
+            <label class="col-lg-12 control-label">Pin Code:</label>
+            <div class="col-lg-12">
+              <input class="form-control" type="text" value="">
+            </div>
+          </div>
+        </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Username:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="Vishnu">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Password:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="11111122333">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Confirm password:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="11111122333">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+              <input type="button" class="btn btn-primary" value="Save Changes" onclick="Swal.fire(
+                'Success!',
+                'Profile Updated Successfully!',
+                'success'
+              )">
+              <span></span>
+              <input type="reset" class="btn btn-light" value="Cancel" onclick="back()">
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+<script>
+  function back()
+  {
+    window.location = "profile.html"
+  }
+  </script>
+</body>
+</html>

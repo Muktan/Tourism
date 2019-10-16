@@ -1207,3 +1207,43 @@
             footer.mainfooter {
                 margin-top: 0px;
             }
+
+            
+            .booking.tabs .indicator {
+                background-color: rgb(203, 206, 39);
+            }
+            
+            .booking.tabs .tab a:focus,
+            .booking.tabs .tab a:focus.active {
+                background: transparent;
+            }
+            
+            #cab,#hotels{
+                padding:5px;
+                margin:auto;
+                align-content: center;
+                width:100vh;
+                
+            }
+            
+            .booking{
+                overflow: hidden;
+                margin:10px auto;
+                border: 1px solid dodgerblue;
+                width:150vh;
+            }
+
+            .tabs{
+                margin:auto;
+                width:100vh;
+            }
+
+            .submit_button{
+                background-color:orange;
+                border-radius: 30px;
+                margin: 5px auto;
+            }
+
+            #location{
+                border : 2px solid rgba(0,0,0,0.1);
+            }
